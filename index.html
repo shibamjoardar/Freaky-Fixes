@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freaky Fixes — Connecting people with psychologists</title>
+<meta name="description" content="Freaky Fixes connects people with psychologists for one-on-one counseling, group therapy, and live support sessions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <span class="wordmark">Freaky Fixes</span>
+    <button id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+  </div>
+  <nav class="site-nav" aria-label="Primary">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#ai-chat">AI Chat</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li id="nav-auth-slot"><span id="nav-auth"></span></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Talking it through helps.<br>We'll help you find who to talk to.</h1>
+      <p class="hero-sub">Freaky Fixes connects you with psychologists for one-on-one counseling, group therapy, and live support — in a space built to be confidential and judgment-free.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start a conversation</a>
+        <a href="tel:+918989786675" class="btn btn-ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 89897 86675</a>
+      </div>
+    </div>
+    <div class="breathing-wrap">
+      <div class="breathing-circle" aria-hidden="true"></div>
+      <div class="breathing-circle breathing-circle--mid" aria-hidden="true"></div>
+      <div class="breathing-circle breathing-circle--inner" aria-hidden="true"></div>
+      <p id="breath-phase" class="breath-phase" aria-live="polite"></p>
+      <button type="button" id="breathing-toggle" class="btn btn-ghost breathing-toggle">
+        <i class="fa-solid fa-play" aria-hidden="true"></i> Start a guided breath
+      </button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Why Freaky Fixes</h2>
+    <p>Mental well-being deserves the same attention as physical health. Stress, anxiety, low mood, and loneliness are common — and talking to someone trained to listen can make a real difference.</p>
+    <p>We connect you with experienced, compassionate psychologists in a space built for privacy and trust, whether you're looking for ongoing one-on-one counseling, a group session, or someone to talk to right now.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul class="service-list">
+      <li>
+        <details>
+          <summary><i class="fa-solid fa-comments" aria-hidden="true"></i> One-on-one counseling</summary>
+          <p>Private sessions matched to what you're working through, with a psychologist you choose and can switch if it's not the right fit.</p>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary><i class="fa-solid fa-people-group" aria-hidden="true"></i> Group therapy</summary>
+          <p>Shared sessions with others navigating similar experiences, run by a licensed facilitator in a structured, confidential setting.</p>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary><i class="fa-solid fa-headset" aria-hidden="true"></i> 24/7 support chat</summary>
+          <p>Someone to talk to, any hour you need it — through our AI chat for immediate support, or a message to the team for anything else.</p>
+        </details>
+      </li>
+    </ul>
+
+    <h3 class="schedule-heading">Live sessions this week</h3>
+    <ul class="schedule">
+      <li>
+        <span class="schedule-day">Monday</span>
+        <span class="schedule-time">10:00 – 11:00 AM</span>
+        <span class="schedule-topic">Managing stress — live discussion</span>
+        <button type="button" class="notify-btn" data-session="mon" aria-pressed="false">Notify me</button>
+      </li>
+      <li>
+        <span class="schedule-day">Wednesday</span>
+        <span class="schedule-time">2:00 – 3:00 PM</span>
+        <span class="schedule-topic">Overcoming anxiety</span>
+        <button type="button" class="notify-btn" data-session="wed" aria-pressed="false">Notify me</button>
+      </li>
+      <li>
+        <span class="schedule-day">Friday</span>
+        <span class="schedule-time">5:00 – 6:00 PM</span>
+        <span class="schedule-topic">Emotional well-being workshop</span>
+        <button type="button" class="notify-btn" data-session="fri" aria-pressed="false">Notify me</button>
+      </li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Is this confidential?</summary>
+      <p>Yes. What you share with a psychologist stays between you and them, with the same confidentiality standards as in-person therapy.</p>
+    </details>
+    <details>
+      <summary>How much does a session cost?</summary>
+      <p>Pricing varies by psychologist and session type. Reach out through the contact form and we'll share options that fit your budget.</p>
+    </details>
+    <details>
+      <summary>Can I switch psychologists if it's not a good fit?</summary>
+      <p>Yes — finding the right fit matters more than sticking with a first match. Just let us know and we'll help you switch.</p>
+    </details>
+    <details>
+      <summary>Do you support regional languages?</summary>
+      <p>Many of our psychologists offer sessions in Bengali and Hindi as well as English — let us know your preference when you reach out.</p>
+    </details>
+  </section>
+
+  <section id="ai-chat">
+    <h2>Need to talk right now?</h2>
+    <p>Our AI chat is available any time, for immediate support while you wait to connect with a psychologist. It's a starting point, not a replacement for a session — open it any time from the chat button in the corner of the screen.</p>
+    <button type="button" class="btn btn-primary" onclick="window.openFreakyChat && window.openFreakyChat()">Open AI chat</button>
+  </section>
+
+  <section id="contact">
+    <h2>Get in touch</h2>
+    <p class="contact-lead">Tell us a little about what you're looking for, and we'll get back to you.</p>
+    <form id="contact-form">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-row form-row--textarea">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="What's on your mind?" required></textarea>
+      </div>
+      <p id="contact-status" class="auth-error" role="status" hidden></p>
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Freaky Fixes. All rights reserved.</p>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+  </div>
+</footer>
+
+<button id="scroll-top" type="button" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script type="module">
+  import { submitContactMessage } from "./auth.js";
+
+  const toggle = document.getElementById('theme-toggle');
+  const icon = toggle.querySelector('i');
+  toggle.addEventListener('click', () => {
+    const dark = document.body.classList.toggle('dark-mode');
+    toggle.setAttribute('aria-pressed', String(dark));
+    toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    icon.className = dark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+  });
+
+  const scrollTopBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+  });
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  const statusEl = document.getElementById('contact-status');
+  document.getElementById('contact-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    try {
+      await submitContactMessage(name, email, message);
+      statusEl.textContent = "Thanks — we'll be in touch soon.";
+      statusEl.hidden = false;
+      e.target.reset();
+    } catch (err) {
+      statusEl.textContent = "Something went wrong sending that. Please try again.";
+      statusEl.hidden = false;
+    }
+  });
+</script>
+<script type="module" src="nav-auth.js"></script>
+<script src="interactions.js"></script>
+<script src="chat-widget.js"></script>
+
+</body>
+</html>
